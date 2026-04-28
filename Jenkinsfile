@@ -33,14 +33,15 @@ pipeline {
             }
         }
 
-        stage('Run Test') {
-            steps {
-                sh '''
-                export MAVEN_HOME=$WORKSPACE/apache-maven-3.9.15
-                export PATH=$MAVEN_HOME/bin:$PATH
-                mvn test
-                '''
-            }
-        }
+        stage('Run Automation') {
+    steps {
+        sh '''
+        export MAVEN_HOME=$WORKSPACE/apache-maven-3.9.6
+        export PATH=$MAVEN_HOME/bin:$PATH
+
+        mvn exec:java -Dexec.mainClass="org.example.websiteTesting"
+        '''
+    }
+}
     }
 }
