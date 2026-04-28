@@ -163,7 +163,7 @@ public class websiteTesting {
     }
 
     public static void main(String[] args) {
-        List<String> websites = Arrays.asList("https://www.brandpos.io");
+        List<String> websites = Arrays.asList("https://www.scube.co/");
 
         executorService = Executors.newFixedThreadPool(MAX_PARALLEL_CHECKS);
 
