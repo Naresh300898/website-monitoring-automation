@@ -43,3 +43,4 @@ target/
 target/
 *.log
 credentials.json
+websites.csv
