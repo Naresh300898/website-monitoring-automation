@@ -147,7 +147,7 @@ public class websiteTesting {
 
     public static void main(String[] args) {
         List<String> websites = Arrays.asList(
-                "https://www.brandpos.in"
+                "https://www.brandpos.io"
         );
 
         try {
