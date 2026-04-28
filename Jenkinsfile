@@ -1,6 +1,9 @@
 pipeline {
     agent any
-
+    
+    environment {
+    GOOGLE_APPLICATION_CREDENTIALS = "${WORKSPACE}/credentials.json"
+}
     stages {
 
         stage('Checkout') {
