@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/Naresh300898/website-monitoring-automation.git'
+                git branch: 'main', url: 'https://github.com/Naresh300898/website-monitoring-automation.git'
             }
         }
 
